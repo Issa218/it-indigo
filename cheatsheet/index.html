@@ -7,10 +7,35 @@
       name="description"
       content="Short keyword rich narrative of the site purpose"/>
     <meta name="author" content="Hala Issa" />
+    <style>
+      input, textarea,label{
+        display:block;
+      }
+    </style>
     <title>HTML CheatSheet</title>
   </head>
   <body>
     <h1>HTML5 CheatSheet</h1>
+    <section id="forms">
+      <form action="processing-script.php" method="post">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="cust-name">Customer Name:</label>
+          <input type="text" id="cust-name" name="cust-name"
+          placeholder="Enter your name"/>
+          <label for="address">Address:</label>
+          <textarea id="address" name="address"></textarea>
+          <label for="fav-color">Favorite Color</label>
+          <select id="fav-color" name="fav color">
+            <option value="R">Red</option>
+            <option value="G">Green</option>
+            <option value="B">Blue</option>
+            <option selected>---</option>
+          </select>
+          <input type="submit"/>
+        </fieldset>
+      </form>
+    </section>
     <section id="quotes">
         <h2>Quotes</h2>
         <h3>Block Quote</h3>
