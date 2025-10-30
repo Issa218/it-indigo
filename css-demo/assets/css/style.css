@@ -5,6 +5,13 @@ html {
   box-sizing: inherit;
 }
 
+/*--------Utility Class--------*/
+.container{
+  margin:auto;
+  padding:40px;
+
+}
+
 body{ 
   background-color: #48182F;  
   font-family: "Oswald", sans-serif;
@@ -16,5 +23,41 @@ main{
     width: 90vw;
     margin:40px auto;
     border: 6px double #48182F;
-    border-radius: 20px;
+    max-width:980px;
+    /*border-radius: 20px;*/
+}
+
+header.primary{
+padding:20px;
+background-image:url("../img/bg_1.webp"); /*Linking images within file system*/
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+border:3px solid #48182F;
+display:flex;
+justify-content: space-between;
+}
+
+div.hgroup h1 a{
+  color:#D4CBC4;
+  text-decoration: none;
+  font-size:2.5rem;
+  text-shadow:
+
+}
+
+div.hgroup h2{
+
+  color:#D4CBC4;
+}
+
+div.hgroup{
+  width:
+
+}
+
+
+header.primary nav{
+  width:
+
 }
