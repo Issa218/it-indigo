@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*--------Utility Class--------*/
+.container{
+  margin:auto;
+  padding:40px;
+
+}
+
+
+body{ 
+  background-color: #48182F;  
+  font-family: "Oswald", sans-serif;
+  
+}
+
+main{
+    background-color:#D4CBC4;
+    text-align:center;
+    width: 90vw;
+    margin:40px auto;
+    border: 6px double #48182F;
+    max-width:980px;
+    /*border-radius: 20px;*/
+}
+
+body{
+    color:#D4CBC4;
+}
+
+
+a{
+color:#D4CBC4;
+}

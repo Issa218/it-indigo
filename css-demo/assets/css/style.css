@@ -19,7 +19,7 @@ body{
 
 main{
     background-color:#D4CBC4;
-    text-align:center;
+    /* text-align:center; */
     width: 90vw;
     margin:40px auto;
     border: 6px double #48182F;
@@ -52,12 +52,50 @@ div.hgroup h2{
 }
 
 div.hgroup{
-  width:
+  width:70%;
 
+}
+
+header.primary nav ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+header.primary nav ul li a{
+  color:#D4CBC4;
+  display:block;
+  margin-bottom: 10px;
+  background: #48182F;
+  border: 1px dashed #D4CBC4;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: .9rem;
+  text-decoration: none;
+  transition:.5s;
+}
+
+header.primary nav ul li a:hover{
+  text-decoration: underline;
+  text-shadow:.5px .5px #D4CBC4;
 }
 
 
 header.primary nav{
-  width:
+  width:30%;
 
 }
+
+
+#content{
+  line-height: 1.5rem;
+}
+
+#content h2,h3{
+  color:#48182F;
+  border-left:#48182F 7px solid;
+  padding-left:5px;
+}
+
+
