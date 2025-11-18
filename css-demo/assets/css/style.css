@@ -5,6 +5,13 @@ html {
   box-sizing: inherit;
 }
 
+/*--------Responsive image--------*/
+img{
+  max-width: 100%;
+}
+
+
+
 /*--------Utility Class--------*/
 .container{
   margin:auto;
@@ -43,7 +50,6 @@ div.hgroup h1 a{
   text-decoration: none;
   font-size:2.5rem;
   text-shadow:
-
 }
 
 div.hgroup h2{
@@ -92,10 +98,58 @@ header.primary nav{
   line-height: 1.5rem;
 }
 
-#content h2,h3{
+#content h2,h3, .widget header h2{
   color:#48182F;
   border-left:#48182F 7px solid;
   padding-left:5px;
 }
 
+#blog{
+  padding:10px;
 
+}
+
+#blog h2{
+
+color:#48182F;
+margin-left:30px;
+}
+
+#blog .post{
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 
+   "figure header"
+   "figure post-content"
+   "figure footer";
+   
+}
+
+.post figure{
+  grid-area:figure;
+  margin:0 20px 0 0;
+
+}
+
+.post header{
+grid-area:header;
+}
+
+.post .post-content{
+grid-area:post-content;
+}
+
+.post .post-meta{
+grid-area:footer;
+}
+
+aside .container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:40px;
+}
+
+#colophon{
+  padding:1px;
+  text-align: center;
+}

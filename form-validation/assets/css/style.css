@@ -1,0 +1,26 @@
+ .formlabel {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        padding: 5px;
+        font-weight: bold;
+    }
+ .error {
+        color: red;
+        padding-left: 5px;
+   }
+
+    #identification{
+        border-bottom: solid black 1px;
+        padding:6px;
+    }
+
+    #number{
+        border-bottom: solid black 1px;
+        padding:6px;
+    }
+
+    #medication{
+        border-bottom: solid black 1px;
+        padding:6px;
+    }
