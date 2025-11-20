@@ -48,6 +48,6 @@ padding:5px;
 }
 
 li::marker {
-  content: "\2605"; 
+  content: "\2605";  /*Star unicode- ::marker is a psuedo-element that selects the marker box of a list item like bullets points or numbers and this element only works on li and summary items  */
   color:#F6E9D9; 
 }
