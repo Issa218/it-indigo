@@ -32,7 +32,34 @@
       gap: 20px;
       max-width: 80vw;
       margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr);
+     grid-template-areas: 
+        "header header header header"
+        "content content blog blog"
+        "content content aside aside"
+        "footer footer footer footer"
     }
+
+   header.primary{
+    grid-area: header;
+   }
+
+   #content{
+    grid-area: content;
+   }
+
+   #blog{
+    grid-area: blog;
+   }
+
+   aside{
+    grid-area: aside;
+   }
+
+   footer.primary{
+    grid-area: footer;
+   }
+
   </style>
 
 </head>
