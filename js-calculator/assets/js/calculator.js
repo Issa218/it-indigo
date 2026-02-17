@@ -6,58 +6,40 @@ function calculate() {
         /* get the operands from the form */
         let operand1 = document.getElementById("Operand1").value;
         let operand2 = document.getElementById("Operand2").value;
-        let operand3 = document.getElementById("Operand3").value;
+
         
         /* convert the operands from string to floating point */
         let operand1fp = parseFloat (operand1);
         let operand2fp = parseFloat (operand2);
-        let operand3fp = parseFloat (operand3);
+    
         
         /* figure out which operator was checked and place the value in operator */
-        let operator;
-        if (document.getElementById("MinOperator").checked) {
-            operator = document.getElementById("MinOperator").value;
-        }
-        if (document.getElementById("MaxOperator").checked) {
-            operator = document.getElementById("MaxOperator").value;
-        }
-        if (document.getElementById("AvgOperator").checked) {
-            operator = document.getElementById("AvgOperator").value;
-        }
+       function calculate() {
+    if (previousInput === '' || currentInput === '') return;
+    let result;
+    let prev = parseFloat(previousInput);
+    let current = parseFloat(currentInput);
 
-        let result;
-        
-        /* if the operator was "Min" then set result to the minimum */
-        if (operator == "Min") {
-            if(operand1fp <= operand2fp && operand1fp <= operand3fp) {
-                result = operand1fp;
+    switch (currentOperation) {
+        case '+':
+            result = prev + current;
+            break;
+        case '-':
+            result = prev - current;
+            break;
+        case '*':
+            result = prev * current;
+            break;
+        case '/':
+            if (current === 0) {
+                alert("Cannot divide by zero");
+                return;
             }
-            if(operand2fp <= operand1fp && operand2fp <= operand3fp) {
-                result = operand2fp;
-            }
-            if(operand3fp <= operand1fp && operand3fp <= operand2fp) {
-                result = operand3fp;
-            }
-        }
- 
-        /* if the operator was "Max" then set result to the maximum */
-        if (operator == "Max") {
-            if(operand1fp >= operand2fp && operand1fp >= operand3fp) {
-                result = operand1fp;
-            }
-            if(operand2fp >= operand1fp && operand2fp >= operand3fp) {
-                result = operand2fp;
-            }
-            if(operand3fp >= operand1fp && operand3fp >= operand2fp) {
-                result = operand3fp;
-            }
-        }
-
-        /* if operator was "Avg" the calcualute the average of 3 operands */
-        if (operator == "Avg") {
-            result = (operand1fp + operand2fp + operand3fp) / 3.0;
-        }
-        
+            result = prev / current;
+            break;
+        default:
+            return;
+    }
         /* convert the result to a string and display it */
         document.getElementById("Result").innerHTML = result.toString();
     }
@@ -68,10 +50,8 @@ function clearform() {
     /* Set all of the form values to blank or false */
     document.getElementById("Operand1").value = "";
     document.getElementById("Operand2").value = "";
-    document.getElementById("Operand3").value = "";
     document.getElementById("Operand1Error").innerHTML = "";
     document.getElementById("Operand2Error").innerHTML = "";
-    document.getElementById("Operand3Error").innerHTML = "";
     document.getElementById("MinOperator").checked = false;
     document.getElementById("MaxOperator").checked = false;
     document.getElementById("AvgOperator").checked = false;
