@@ -3,25 +3,11 @@
 <head>
     <title>Circle Calculations</title>
     <meta charset ="utf-8"> 
+    <link href="css/style.css"   rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
-
-<!-- The following should be a file in the "style" folder -->
-    <style>
-    .formlabel {
-        display: inline-block;
-        width: 200px;
-        text-align: right;
-        padding: 5px;
-        font-weight: bold;
-    }
-
-    .error {
-        color: red;
-        padding-left: 5px;
-    }
-    </style>
+   
 </head>
 
 <body>
@@ -33,19 +19,92 @@
                data-rule-number="true" data-msg-number="Radius must be floating point number"
                data-rule-min="0" data-msg-min="Radius must be greater than zero">
         <label for="radius" class="error" id="radiuserror"></label>
-        <br>
+        <br></br>
         
-        <label class="formlabel">Diameter:</label><span id="diameter"></span><br>
-        <label class="formlabel">Circumference:</label><span id="circumference"></span><br>
-        <label class="formlabel">Area:</label><span id="area"></span><br>
-        <br><br>
+        <label class="formlabel">Diameter:</label><span id="diameter"></span>
+        <input type="text" id="diameter" name="diameter"
+               data-rule-required="true"  data-msg-required="Diameter is Required" 
+               data-rule-number="true" data-msg-number="Diameter must be floating point number"
+               data-rule-min="0" data-msg-min="Diameter must be greater than zero">
+        <label for="diameter" class="error" id="diametererror"></label>
+        <br></br>
+
+        <label class="formlabel">Circumference:</label><span id="circumference"></span>
+         <input type="text" id="circumference" name="circumference"
+               data-rule-required="true"  data-msg-required="Circumference is Required" 
+               data-rule-number="true" data-msg-number="Circumference must be floating point number"
+               data-rule-min="0" data-msg-min="Circumference must be greater than zero">
+        <label for="circumference" class="error" id="circumferenceerror"></label>
+        <br></br>
+
+
+        <label  class="formlabel">Area:</label><span id="area"></span>
+          <input type="text" id="area" name="area"
+               data-rule-required="true"  data-msg-required="Area is Required" 
+               data-rule-number="true" data-msg-number="Area must be floating point number"
+               data-rule-min="0" data-msg-min="Area must be greater than zero">
+        <label for="Area" class="error" id="areaerror"></label>
+        <br></br>
+
+        <br></br>
         <input type="submit" value="Calculate" id="btnSubmitCalculate">
         <input type="submit" value="Clear" id="btnSubmitClear">
     </form>
-<script>
-$( "#CircleForm" ).validate({
 
-});
+<script>
+    //Math Functions
+    function calcDiameter(radius) {
+        return 2 * radius;
+    }
+
+    function calcCircumference(radius) {
+        return 2 * Math.PI * radius;
+    }
+
+    function calcArea(radius) {
+        return Math.PI * radius * radius;
+    }
+
+    // Clear Form Function
+    function clearForm() {
+        $("#radius").val("");
+        $("#diameter").text("");
+        $("#circumference").text("");
+        $("#area").text("");
+        $("#radiuserror").text(""); // Clear any error messages
+    }
+
+    // 3. Main Logic (Runs when Calculate is clicked)
+    function calculate() {
+        // Only calculate if the form passes validation rules
+        if ($("#CircleForm").valid()) {
+            
+            // Convert input string to a floating point number
+            let radius = parseFloat($("#radius").val());
+
+            // Run calculations and display results
+            // .toFixed(2) limits the result to 2 decimal places for readability
+            $("#diameter").text(calcDiameter(radius).toFixed(2));
+            $("#circumference").text(calcCircumference(radius).toFixed(2));
+            $("#area").text(calcArea(radius).toFixed(2));
+        }
+    }
+
+    // 4. Document Ready - Event Listeners
+    $(document).ready(function() {
+        // Initialize Validation
+        $("#CircleForm").validate();
+
+        // Attach click event to Calculate button
+        $("#btnSubmitCalculate").click(function() {
+            calculate();
+        });
+
+        // Attach click event to Clear button
+        $("#btnSubmitClear").click(function() {
+            clearForm();
+        });
+    });
 </script>
 </body>
 </html>
