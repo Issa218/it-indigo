@@ -1,4 +1,4 @@
-
+/* 
     /*  ---------------Box Sizing-----------------  */
     html {
       box-sizing: border-box;
@@ -13,7 +13,7 @@
    /* custom css properties */
     :root{
        --primary-color: #555931;
-       --secondary-color:#F2E8DC;
+       --secondary-color:#F2EFE9;
        --detail-color-1:#590E15;
        --detail-color-2:#BC2328;
        --detail-color-3:#ABB18F;
@@ -22,26 +22,36 @@
    
 
     main>* {
-      font-family: "courier-prime", monospace;
-      font-weight: 400;
-      font-style: normal;
-      margin: 0;
-      padding: 0;
+    font-family: "clother", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
       
     }
 
-    body{
+  body{
       background-color: var(--secondary-color);
-      margin:0px;
+      margin:20px;
     }
 
     header.primary{
-    text-align: center;
-    padding: 20px;
+    display:flex;
+    justify-content: right;
+    height:350px;
+    width:350px; 
     width: 100%;
     background-color: var(--detail-color-1);
     color:var(--secondary-color);
    }
+
+  img{
+    display:flex;
+    justify-content: center;
+    height:350px;
+    width:350px; 
+
+  }
 
    a{
      text-decoration: none;
@@ -58,19 +68,23 @@
 
    nav ul{
     display:grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 10px 10px 10px;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px 10px 10px 10px;
+    
    }
   
 nav a:link, nav a:visited {
   display: block;
   padding: 5px 10px;
-  border: 1px solid ;
+  border: 4px double  ;
   text-align: center;
   color: var(--secondary-color);
-  background:var(--detail-color-3)(0, 0, 0, 0.65);
-  transition: background-color 0.5s ease;
-  color: #ffffff;
+  background: var(--primary-color);
+  transition: var(--detail-color-3) 0.5s ease;
 }
 
 
+a.sources{
+  color:black;
+} 
+   

@@ -2,96 +2,175 @@
 <html lang="en">
 
 <head>
-  <title>MENA Humanitarian Data</title>
+  <title>Levant Focus Humanitarian Database</title>
   <meta charset="UTF-8" />
   <meta name="description" content="Keyword rich narrative on site purpose" />
   <meta name="author" content="Hala Issa" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> <!-- Add your own Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://use.typekit.net/scd3zwh.css">
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 
 <body>
-  <main>
+<main>
+
   <header role="banner" class="primary">
-    <h1><a href="index.html">Humanitarian Crisis Dashboard | MENA</a></h1>
-    <h2>Real-time humanitarian data for the Levant Region.</h2>
-    <nav role="navigation" class="primary">
+    <!-- <h1><a href="index.html">Humanitarian Database</a></h1>
+    <h2>Real-time humanitarian data for the Levant Region</h2> -->
+    <img src="assets/img/Logo (5).png" alt="levant humanitarian databse text with olive branch surrounding text and mena map">
+    <nav role="navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="data.html">Data</a></li>
+        <li><a href="about.html">Country Profiles</a></li>
+        <li><a href="data.html">Data and Statistics</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
-  <section id="content" class="container">
-    <h2>Page Name</h2>
-    <p>Integer pretium fringilla mauris, sed cursus purus consectetur eu. Donec vitae placerat enim. Nam dictum purus nec diam pharetra, in accumsan ipsum commodo. In varius ligula posuere, sodales erat nec, tempus purus. Quisque eu posuere arcu, ut pellentesque</p>
-    <p>Integer pretium fringilla mauris, sed cursus purus consectetur eu. Donec vitae placerat enim. Nam dictum purus nec diam pharetra, in accumsan ipsum commodo. In varius ligula posuere, sodales erat nec, tempus purus. Quisque eu posuere arcu, ut pellentesque</p>
-    <p>Integer pretium fringilla mauris, sed cursus purus consectetur eu. Donec vitae placerat enim. Nam dictum purus nec diam pharetra, in accumsan ipsum commodo. In varius ligula posuere, sodales erat nec, tempus purus. Quisque eu posuere arcu, ut pellentesque</p>
-  </section>
-  <section id="articles" class="container">
-    <article class="post">
-      <header>
-        <figure>
-          <img src="https://placehold.co/300x200" alt="Placeholder" />
-          <figcaption>Image Caption</figcaption>
-        </figure>
-        <h2> <a href="#" rel="bookmark" title="link to this post">Article Title</a> </h2>
-      </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-      </p>
-      <footer class="post-meta"> Posted by <a href="#">Post Author</a></footer>
-    </article>
-    <!-- <article class="post">
-      <header>
-        <figure>
-          <img src="https://placehold.co/300x200" alt="Placeholder&nbsp;" />
-          <figcaption>Image Caption</figcaption>
-        </figure>
-        <h2> <a href="#" rel="bookmark" title="link to this post">Article Title</a> </h2> -->
-      <!-- </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-      </p>
-      <footer class="post-meta"> Posted by <a href="#">Post Author</a></footer> -->
-    </article>
-    <article class="post">
-      <header>
-        <figure>
-          <img src="https://placehold.co/300x200" alt="Placeholder" />
-          <figcaption>Image Caption</figcaption>
-        </figure>
-        <h2> <a href="#" rel="bookmark" title="link to this post">Article Title</a> </h2>
-      </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-      </p>
-      <footer class="post-meta"> Posted by <a href="#">Post Author</a></footer>
-    </article>
-  </section>
-  <aside role="complementary">
-    <div class="container">
-      <article class="widget">
-        <header>
-          <h2>Sample Sidebar Item </h2>
-        </header>
-        <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
-          Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
-        <footer>Widget Footer</footer>
-      </article>
-      <article class="widget">
-        <header>
-          <h2>Sample Sidebar Item </h2>
-        </header>
-        <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
-          Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
-        <footer>Widget Footer</footer>
-      </article>
-    </div>
-  </aside>
-  <footer id="colophon" class="primary" role="contentinfo">
-    <h6>&copy; 2026 Hala Issa</h6>
-  </footer>
 
-</body>
+  <section id="content" class="container">
+
+  <h2>About Us</h2>
+  <p>An overview of the ongoing humanitarian emergencies in Syria, Palestine, and Lebanon.
+      Tracking displacement, casualties, food insecurity, and aid access. This dashboard draws from
+      United Nations agencies, humanitarian organizations, and open data sources to provide an
+      accurate picture of conditions on the ground.</p>
+
+      <ul>
+        <li>3 — Active humanitarian crises tracked</li>
+        <li>~36 Million — People across the region in need of humanitarian assistance</li>
+        <li>12 Million+ — Syrians displaced (internally and as refugees abroad)</li>
+        <li>70,000+ — Palestinians killed in Gaza since October 2023</li>
+        <li>4.1 Million — People in need of assistance in Lebanon (2025)</li>
+      </ul>
+
+  </section>
+
+  
+  <section>
+    <h2>Crisis Severity Overview</h2>
+    <p>Each country is assessed using a three-tier severity classification based on ACAPS and OCHA methodology.</p>
+
+    <article>
+      <h3>Palestine (Gaza &amp; West Bank) — CRITICAL</h3>
+      <p>Primary drivers: Active armed conflict, aid blockade, mass displacement, infrastructure destruction</p>
+      <p>Key statistic: 70,000+ killed; approximately 90% of Gaza's population displaced</p>
+    </article>
+
+    <article>
+      <h3>Syria — SERIOUS</h3>
+      <p>Primary drivers: Post-conflict transition, mass displacement, collapsed infrastructure, food insecurity</p>
+      <p>Key statistic:16.5 million people in need; 7.4 million internally displaced</p>
+    </article>
+
+    <article>
+      <h3>Lebanon — ELEVATED</h3>
+      <p>Primary drivers: Economic collapse, conflict spillover, refugee burden, political instability</p>
+      <p>Key statistic: 4.1 million in need; GDP declined approximately 40% since 2019</p>
+    </article>
+  </section>
+
+  
+  <section>
+    <h2>Country Snapshots</h2>
+
+    <article>
+      <h3>Palestine — Gaza Strip &amp; West Bank</h3>
+      <p>Crisis Level: CRITICAL</p>
+      <p>
+        Since October 7, 2023, the Gaza Strip has experienced one of the most severe humanitarian collapses
+        in modern history. Over 90% of Gaza's 2.3 million residents have been displaced — many multiple times.
+        The near-total destruction of civilian infrastructure, a sustained military campaign, and a near-complete
+        blockade of humanitarian aid have pushed the population to the edge of survival. In the West Bank,
+        violence and settler attacks have intensified simultaneously.
+      </p>
+      <ul>
+        <li>70,000+ Palestinians reportedly killed in Gaza (Oct 2023–2025)</li>
+        <li>1.9 million displaced in Gaza (~90% of total population)</li>
+        <li>61% of health facilities non-functional</li>
+        <li>93% of school buildings damaged or destroyed (526 of 564)</li>
+        <li>UNRWA banned from bringing aid into Gaza since March 2, 2025</li>
+      </ul>
+      <p><a href="">View full Palestine profile</a></p>
+    </article>
+
+
+    <article>
+      <h3>Syria</h3>
+      <p>Crisis Level: SERIOUS</p>
+      <p>
+        Syria's 14-year civil war entered a new phase after the fall of the Assad government in December 2024.
+        Over 1.2 million Syrian refugees have returned since then, but conditions remain dire: 14.56 million
+        face food insecurity, 38% of hospitals are partially or fully non-functional, and violence persists
+        in coastal and northeastern regions.
+      </p>
+      <ul>
+        <li>16.5 million people in need of humanitarian assistance (2025)</li>
+        <li>7.4 million still internally displaced inside Syria</li>
+        <li>4.5 million Syrian refugees registered in neighboring countries</li>
+        <li>14.56 million people face food insecurity</li>
+        <li>1.2 million refugees returned after Assad's fall (Dec 2024 onward)</li>
+        <li>317 killed by landmines and unexploded ordnance since December 2024, including 71 children</li>
+      </ul>
+      <p><a href="">View full Syria profile </a></p>
+    </article>
+
+
+    <article>
+      <h3>Lebanon</h3>
+      <p>Crisis Level: ELEVATED</p>
+      <p>
+        Lebanon faces a compounding catastrophe: one of the worst economic collapses in modern history since
+        2019, the aftermath of massive conflict damage from 2024 fighting, and the weight of hosting one of
+        the world's largest refugee populations per capita. Over 1.5 million Syrian refugees and 180,000
+        Palestinian refugees live within its borders.
+      </p>
+      <ul>
+        <li>4.1 million people in need of humanitarian assistance (2025)</li>
+        <li>4,400+ killed in Lebanon since October 2023</li>
+        <li>~40% cumulative GDP decline since 2019</li>
+        <li>$14 billion in estimated conflict damage and losses (2024)</li>
+        <li>1.5 million Syrian refugees hosted in Lebanon</li>
+        <li>~1 million Lebanese face food insecurity</li>
+        <li>Lebanon hosts the highest refugee-to-population ratio of any country globally</li>
+      </ul>
+      <p><a href="">View full Lebanon profile </a></p>
+    </article>
+  </section>
+
+
+<section>
+    <h2>Regional Map</h2>
+    <p>The map below uses Leaflet.js and OpenStreetMap tiles. Click any marker for a brief situation description.</p>
+    <div id="map" style="height: 450px; width: 600px; border: 1px solid #ccc;"></div>
+  </section>
+
+
+  <section>
+    <h2>Latest Humanitarian News</h2>
+    <p>Headlines pulled from the ReliefWeb API, filtered for Syria, Palestine, and Lebanon.</p>
+    <div id="news-feed"><p></p></div>
+  </section>
+
+  <section >
+    <h2>Data Sources</h2>
+    <ul>
+      <li><a href="https://www.unocha.org" target="_blank">OCHA — UN Office for the Coordination of Humanitarian Affairs</a></li>
+      <li><a href="https://www.unhcr.org" target="_blank">UNHCR — UN Refugee Agency</a></li>
+      <li><a href="https://www.unrwa.org" target="_blank">UNRWA — UN Relief and Works Agency for Palestine Refugees</a></li>
+      <li><a href="https://reliefweb.int" target="_blank">ReliefWeb — Humanitarian Information Platform</a></li>
+      <li><a href="https://www.acaps.org" target="_blank">ACAPS — Crisis Analysis</a></li>
+      <li><a href="https://www.who.int" target="_blank">WHO — World Health Organization</a></li>
+      <li><a href="https://www.wfp.org" target="_blank">WFP — World Food Programme</a></li>
+    </ul>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/js/index.js"></script>
+
+ 
+
 </main>
+</body>
 </html>
