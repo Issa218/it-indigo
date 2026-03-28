@@ -1,4 +1,3 @@
-/* 
     /*  ---------------Box Sizing-----------------  */
     html {
       box-sizing: border-box;
@@ -15,7 +14,6 @@
        --primary-color: #555931;
        --secondary-color:#F2EFE9;
        --detail-color-1:#590E15;
-       --detail-color-2:#BC2328;
        --detail-color-3:#ABB18F;
 
     }
@@ -31,25 +29,51 @@
     }
 
   body{
-      background-color: var(--secondary-color);
-      margin:20px;
+      background-color: var(--primary-color);
+      margin: 0; 
+      padding: 0;
     }
 
-    header.primary{
-    display:flex;
-    justify-content: right;
-    height:350px;
-    width:350px; 
-    width: 100%;
-    background-color: var(--detail-color-1);
-    color:var(--secondary-color);
-   }
+  .container{
+   margin:15px;
+   padding: 15px;
+   border-radius: 15px ;
+   background-color:var(--secondary-color);
+  }
 
-  img{
-    display:flex;
-    justify-content: center;
-    height:350px;
-    width:350px; 
+  /*---------------------------------------------------Banner + Nav + Logo--------------------------------------------------------*/
+    header.primary h1{
+    margin: 0;
+    font-size: 1.4rem;
+    }
+  
+    /*target just the h1 and logo*/
+    .logo{ 
+     display: flex;
+     align-items: center;
+    }
+    /*target just the h1 and logo*/
+
+    header.primary{
+    position: sticky; /*Make the banner move with the page(from stack overflow)*/
+    top: 0px;        /*Make the banner move with the page (from stack overflow)*/
+    z-index:100; /*Makes banner always layered infront of everything (from stack overflow)*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    gap: 0.5rem;
+    height:150px;
+    width: 100%;
+    padding:0 1.5rem;
+    background-color: var(--secondary-color);
+    opacity: 0.8;
+
+   } 
+
+
+  .logo img{
+    height:155px;
+    width:155px; 
 
   }
 
@@ -57,6 +81,7 @@
      text-decoration: none;
      color:var(--secondary-color);
   }
+
 
   nav{
     padding:1px;
@@ -70,21 +95,86 @@
     display:grid;
     grid-template-columns: repeat(4,1fr);
     padding: 10px 10px 10px 10px;
+    margin: 0;
+    
     
    }
   
 nav a:link, nav a:visited {
   display: block;
   padding: 5px 10px;
-  border: 4px double  ;
+  border: 4px double var(--detail-color-3) ;
   text-align: center;
   color: var(--secondary-color);
   background: var(--primary-color);
-  transition: var(--detail-color-3) 0.5s ease;
+  transition: var(--secondary-color) 0.5s ease;
 }
 
 
-a.sources{
-  color:black;
-} 
+nav a:hover {
+  background-color: var(--detail-color-3);
+  border-bottom: 2px solid var(--primary-color);
+}
+/*--------------------------------------------Banner + Nav + Logo---------------------------------------------------------------*/
    
+li a{
+  color:black;
+}
+
+
+/* -----------------------------------------Slideshow CSS------------------------------------------------------------ */
+.slideshow img{
+    width:100%;
+    height: 500px;      
+    object-fit: cover;   /* fills the space without stretching the picture */
+    display: block;
+}
+
+.slideshow{
+  width: 100%;
+  padding:0;
+  margin: 0 ;
+  position: relative;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: var(--detail-color-3);
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:var(--detail-color-3);
+}
+/* -----------------------------------------Slideshow CSS------------------------------------------------------------ */
+
+footer {
+  color:var(--secondary-color);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+
+/* Media Query */ 
+/* @media screen and (min-width:768px){
+   
+  header.container{
+    max-width:960px;
+  }
+
+  main.container {
+  max-width:960px;
+  }
+}

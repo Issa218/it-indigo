@@ -5,9 +5,11 @@
   <title>Levant Focus Humanitarian Database</title>
   <meta charset="UTF-8" />
   <meta name="description" content="Keyword rich narrative on site purpose" />
-  <meta name="author" content="Hala Issa" />
+  <meta name="author" content="..." />
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
   <link rel="stylesheet" href="https://use.typekit.net/scd3zwh.css">
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
@@ -16,20 +18,34 @@
 <main>
 
   <header role="banner" class="primary">
-    <!-- <h1><a href="index.html">Humanitarian Database</a></h1>
-    <h2>Real-time humanitarian data for the Levant Region</h2> -->
-    <img src="assets/img/Logo (5).png" alt="levant humanitarian databse text with olive branch surrounding text and mena map">
+    <section class="logo">
+    <a href="index.html">
+    <img src="assets/img/Logo (Logo).svg" alt="levant humanitarian databse text with olive branch surrounding text and mena map"> 
+    </a>
+    <h1>Levant Humanitarian Database</h1>
+    </section>
     <nav role="navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">Country Profiles</a></li>
-        <li><a href="data.html">Data and Statistics</a></li>
+        <li><a href="palestine.html"> Palestine Data</a></li>
+        <li><a href="syria.html">Syria Data</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="content" class="container">
+  
+<!-- Slideshow -->
+  <div class="slideshow">
+
+  <div><img src="assets/img/syria-kids.jpg" alt="Group of kids"></div>
+  <div><img src="assets/img/nabih-el-boustani-9PnnalRMDZ8-unsplash.jpg" alt="Man on boat with Lebanese flag"></div>
+  <div><img src="assets/img/palestine-people.jpg"></div>
+  <div><img src="assets/img/kids-camp.jpg"alt="Kids peaking from torn tent"></div>
+
+  </div>
+
+  <section id="about" class="container">
 
   <h2>About Us</h2>
   <p>An overview of the ongoing humanitarian emergencies in Syria, Palestine, and Lebanon.
@@ -48,12 +64,12 @@
   </section>
 
   
-  <section>
+  <section id="overview" class="container">
     <h2>Crisis Severity Overview</h2>
     <p>Each country is assessed using a three-tier severity classification based on ACAPS and OCHA methodology.</p>
 
     <article>
-      <h3>Palestine (Gaza &amp; West Bank) — CRITICAL</h3>
+      <h3>Palestine (Gaza and West Bank) — CRITICAL</h3>
       <p>Primary drivers: Active armed conflict, aid blockade, mass displacement, infrastructure destruction</p>
       <p>Key statistic: 70,000+ killed; approximately 90% of Gaza's population displaced</p>
     </article>
@@ -72,11 +88,11 @@
   </section>
 
   
-  <section>
+  <section id="snapshots" class="container">
     <h2>Country Snapshots</h2>
 
     <article>
-      <h3>Palestine — Gaza Strip &amp; West Bank</h3>
+      <h3>Palestine — Gaza Strip and West Bank</h3>
       <p>Crisis Level: CRITICAL</p>
       <p>
         Since October 7, 2023, the Gaza Strip has experienced one of the most severe humanitarian collapses
@@ -140,20 +156,20 @@
   </section>
 
 
-<section>
+<section  class="container">
     <h2>Regional Map</h2>
     <p>The map below uses Leaflet.js and OpenStreetMap tiles. Click any marker for a brief situation description.</p>
     <div id="map" style="height: 450px; width: 600px; border: 1px solid #ccc;"></div>
   </section>
 
 
-  <section>
+  <section class="container">
     <h2>Latest Humanitarian News</h2>
     <p>Headlines pulled from the ReliefWeb API, filtered for Syria, Palestine, and Lebanon.</p>
     <div id="news-feed"><p></p></div>
   </section>
 
-  <section >
+  <!-- <section id="sources" class="container">
     <h2>Data Sources</h2>
     <ul>
       <li><a href="https://www.unocha.org" target="_blank">OCHA — UN Office for the Coordination of Humanitarian Affairs</a></li>
@@ -164,13 +180,20 @@
       <li><a href="https://www.who.int" target="_blank">WHO — World Health Organization</a></li>
       <li><a href="https://www.wfp.org" target="_blank">WFP — World Food Programme</a></li>
     </ul>
-  </section>
+  </section> -->
 
+  <footer>
+    <p>&copy; 2025 Levant Crisis Monitor | Hala Issa</p>
+    <p><a href="index.html">Home</a> | <a href="#top">Back to Top</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="assets/js/index.js"></script>
 
  
-
 </main>
 </body>
 </html>

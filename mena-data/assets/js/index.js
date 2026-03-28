@@ -1,6 +1,19 @@
-// Timestamps
-const now = new Date();
-const dateStr = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+/------------Homepage Slideshow---------------------/ 
+$('.slideshow').slick({
+  dots: true,
+  infinite: true,
+  speed: 450,
+  fade: true,
+  slide: 'div',
+  cssEase: 'linear',
+  autoplay: true,
+  autoplaySpeed: 2000
+});
+
+/------------Homepage Slideshow---------------------/ 
+
+
+
 
 // Leaflet Map
 const map = L.map('map').setView([33.5, 36.0], 5);
@@ -66,3 +79,6 @@ async function loadNews() {
 }
 
 loadNews();
+
+
+
