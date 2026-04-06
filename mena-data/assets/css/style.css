@@ -254,7 +254,11 @@ footer {
   font-size: 0.8rem;
 }
 
-
+a.profile{
+  color:var(--primary-color);
+  font-weight:600;
+  border-bottom: var(--detail-color-1) solid 2px;
+}
 
 
 /* Media Query */ 
