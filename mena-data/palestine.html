@@ -4,12 +4,10 @@
 <head>
   <title>Levant Focus Humanitarian Database</title>
   <meta charset="UTF-8" />
-  <meta name="description" content="Keyword rich narrative on site purpose" />
-  <meta name="author" content="..." />
+  <meta name="description" content="humanitarian database, syria, palestine, levant" />
+  <meta name="robots" content="noindex">
+  <meta name="author" content="Hala Issa" />
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
   <link rel="stylesheet" href="https://use.typekit.net/scd3zwh.css">
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
@@ -19,15 +17,15 @@
 
   <header role="banner" class="primary">
     <section class="logo">
-    <a href="index.html">
-    <img src="assets/img/Logo (Logo).svg" alt="levant humanitarian databse text with olive branch surrounding text and mena map"> 
-    </a>
-    <h1>Levant Humanitarian Database</h1>
+      <a href="index.html">
+        <img src="assets/img/Logo (Logo).svg" alt="levant humanitarian database text with olive branch surrounding text and mena map">
+      </a>
+      <h1>Levant Humanitarian Database</h1>
     </section>
     <nav role="navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="palestine.html"> Palestine Data</a></li>
+        <li><a href="palestine.html">Palestine Data</a></li>
         <li><a href="syria.html">Syria Data</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
@@ -35,17 +33,315 @@
   </header>
 
 
- 
+  <section id="intro" class="container">
+    <h2>Palestine — Gaza Strip and West Bank</h2>
+    <p><strong>Crisis Level: CRITICAL</strong> | Occupied Palestinian Territory</p>
+    <p><em>Primary drivers: Active armed conflict, humanitarian aid blockade, mass displacement, systematic destruction of civilian infrastructure</em></p>
+    <nav id="secondary">
+    <ul >
+        <li><a href="#statistics">Key Statistics</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#conditions">Current Conditions</a></li>
+        <li><a href="#needs">Needs by Sector</a></li>
+        <li><a href="#timeline">Crisis Timeline</a></li>
+        <li><a href="#funding">Aid and Funding</a></li>
+      </ul>
+    </nav>
+  </section>
+
+
+  <section id="statistics" class="container">
+    <h2>Key Statistics</h2>
+
+    <article>
+      <h3>Casualties</h3>
+      <dl>
+        <dt>Palestinians killed in Gaza (Oct 2023–2025)</dt>
+        <dd>70,668+ — Source: Gaza Ministry of Health / OCHA</dd>
+
+        <dt>Palestinians injured in Gaza</dt>
+        <dd>171,152+ — Source: Gaza Ministry of Health</dd>
+
+        <dt>Palestinians killed in the West Bank (Oct 2023–2025)</dt>
+        <dd>1,043+ including at least 225 children — Source: OCHA oPt</dd>
+      </dl>
+    </article>
+
+    <article>
+      <h3>Displacement</h3>
+      <dl>
+        <dt>Displaced people in Gaza</dt>
+        <dd>~1.9 million — approximately 90% of the entire population — Source: UNRWA / OCHA</dd>
+
+        <dt>West Bank displacement (Operation Iron Wall, Jan 2025)</dt>
+        <dd>32,000+ Palestinian refugees displaced from Jenin, Tulkarm, and Nur Shams camps — Source: OCHA oPt</dd>
+
+        <dt>Palestinian refugees globally</dt>
+        <dd>~6 million UNRWA-registered Palestinian refugees worldwide — Source: UNRWA</dd>
+      </dl>
+    </article>
+
+    <article>
+      <h3>Education</h3>
+      <dl>
+        <dt>School buildings damaged or destroyed in Gaza</dt>
+        <dd>526 of 564 (93%) — Source: Education Cluster / OCHA</dd>
+
+        <dt>Children out of school</dt>
+        <dd>660,000+ for 3 consecutive school years — Source: UNRWA / UNICEF</dd>
+      </dl>
+    </article>
+
+    <article>
+      <h3>Health</h3>
+      <dl>
+        <dt>Health facilities non-functional</dt>
+        <dd>61% of all facilities — Source: WHO Health Cluster</dd>
+
+        <dt>UNRWA health centers still operational</dt>
+        <dd>4 of 22 — Source: UNRWA</dd>
+
+        <dt>Acute malnutrition rate vs. pre-war</dt>
+        <dd>10 times pre-war levels — Source: IPC / UNICEF</dd>
+      </dl>
+    </article>
+
+    <article>
+      <h3>Food and Economy</h3>
+      <dl>
+        <dt>Food price increase in Gaza</dt>
+        <dd>+283% Consumer Price Index (October 2023 – September 2024) — Source: PCBS / WFP</dd>
+
+        <dt>Aid blockade status</dt>
+        <dd>UNRWA formally blocked from bringing aid into Gaza since March 2, 2025 — Source: UNRWA</dd>
+
+        <dt>Blocked aid stockpiles</dt>
+        <dd>Warehouses in Egypt and Jordan hold food for 1.1 million people and flour for 2.1 million — all blocked from entry — Source: UNRWA</dd>
+      </dl>
+    </article>
+  </section>
+
+
+  <section id="background" class="container">
+    <h2>Background and Context</h2>
+    <p>
+      The Palestinian people have lived under Israeli military occupation since 1967. The Gaza Strip — a
+      365 km² coastal territory home to approximately 2.3 million people — has been under an Israeli and
+      Egyptian blockade since 2007, following Hamas's takeover of the territory. This blockade severely
+      restricted the movement of people and goods, limiting access to construction materials, medicine,
+      fuel, and clean water for nearly two decades.
+    </p>
+    <p>
+      Palestinian refugees — descendants of the approximately 700,000 Palestinians who fled or were expelled
+      during the 1948 Arab-Israeli war (known in Arabic as the Nakba, or "catastrophe") — constitute the
+      majority of Gaza's population. UNRWA, the UN agency created to serve Palestinian refugees, has been
+      the primary provider of education, healthcare, and relief services in Gaza for over 75 years.
+    </p>
+    <p>
+      On October 7, 2023, Hamas launched a large-scale attack on southern Israel, killing approximately
+      1,200 people and taking roughly 250 hostages. Israel responded with an intensive air, land, and sea
+      military campaign on Gaza. Hospitals were destroyed, food supplies cut off, displacement became
+      near-total, and humanitarian aid access was denied on a systematic basis.
+    </p>
+    <p>
+      A ceasefire came into effect on January 19, 2025, temporarily allowing limited aid movement and a
+      partial exchange of hostages and prisoners. It collapsed on March 18, 2025, and full hostilities
+      resumed. By mid-2025, UNRWA had been formally barred from bringing any aid into Gaza, leaving
+      warehouses in Egypt and Jordan holding food for 1.1 million people blocked from entry.
+    </p>
+  </section>
+
+
+  <section id="conditions" class="container">
+    <h2>Current Humanitarian Conditions (2025)</h2>
+    <p>
+      The situation in Gaza has been described by UN officials as catastrophic and without modern precedent.
+      With 86% of Gaza under military zones or evacuation orders, civilians are compressed into a shrinking
+      area with no reliable access to food, water, or healthcare. Famine conditions have been documented
+      across parts of Gaza. Acute malnutrition is at ten times pre-war levels. Only 4 of 22 UNRWA health
+      centers remain operational. Of 564 school buildings, 526 have been damaged or destroyed.
+    </p>
+    <p>
+      The economic shock has been severe. The Consumer Price Index in Gaza rose by 283% between October
+      2023 and September 2024. Over 660,000 children have been out of formal education for three
+      consecutive school years — a generational learning loss with long-term consequences.
+    </p>
+    <p>
+      In the West Bank, Israeli forces launched "Operation Iron Wall" in January 2025, displacing over
+      32,000 Palestinian refugees from the Jenin, Tulkarm, and Nur Shams refugee camps. More than 1,000
+      settler attacks were documented in 2025. Since October 2023, at least 1,043 Palestinians have been
+      killed in the West Bank, including at least 225 children.
+    </p>
+  </section>
+
+
+  <section id="needs" class="container">
+    <h2>Humanitarian Needs by Sector</h2>
+
+    <article>
+      <h3>Food Security</h3>
+      <p>
+        IPC Phase 4–5 conditions (Emergency to Famine) are documented across Gaza. The Consumer Price
+        Index rose 283% between October 2023 and September 2024. Acute malnutrition is at ten times
+        pre-war levels, with children under five and pregnant and nursing women among the most severely
+        affected. The aid blockade prevents WFP and UNRWA from restocking food supplies.
+      </p>
+      <p><strong>Assessment: Critical</strong></p>
+    </article>
+
+    <article>
+      <h3>Healthcare</h3>
+      <p>
+        61% of all health facilities are non-functional. Only 4 of 22 UNRWA health centers remain
+        operational. 18 hospitals are only partially functional, lacking electricity, surgical supplies,
+        and the capacity to treat patients. There are severe shortages of anesthesia, antibiotics, blood,
+        and generator fuel. Thousands of patients with chronic conditions are unable to access treatment.
+      </p>
+      <p><strong>Assessment: Critical</strong></p>
+    </article>
+
+    <article>
+      <h3>Shelter</h3>
+      <p>
+        An estimated 42,000+ tents used by displaced civilians have been damaged or destroyed in
+        subsequent military operations. Most of Gaza's residential housing stock is uninhabitable.
+        Displaced families have been forced to move repeatedly as evacuation orders expand across
+        the territory.
+      </p>
+      <p><strong>Assessment: Critical</strong></p>
+    </article>
+
+    <article>
+      <h3>Education</h3>
+      <p>
+        93% of school buildings — 526 of 564 — are damaged or destroyed. Over 660,000 children
+        have been out of formal education for three consecutive school years. UNRWA schools
+        previously served as emergency shelters and are no longer operational in that capacity.
+        The long-term human capital cost of this education crisis is immense.
+      </p>
+      <p><strong>Assessment: Critical</strong></p>
+    </article>
+
+    <article>
+      <h3>Water, Sanitation and Hygiene</h3>
+      <p>
+        Gaza's water and sanitation infrastructure is severely degraded. Desalination plants have
+        been repeatedly damaged or shut down due to lack of fuel. Sewage systems are failing, raising
+        the risk of cholera and other waterborne disease outbreaks. Access to clean water per person
+        per day is a fraction of WHO minimum standards.
+      </p>
+      <p><strong>Assessment: Critical</strong></p>
+    </article>
+  </section>
+
+
+ <section id="timeline-wrapper" class="container">  
+    <h2>Crisis Timeline</h2>
+    <ol class="timeline">
+      <li data-date="1948">
+        <span class="name">Al-Nakba (The Catastrophe)</span>
+        <div class="data show"></div>
+        <h3>1948 — Al-Nakba (The Catastrophe)</h3>
+        <p>Approximately 700,000 Palestinians fled or were expelled during the Arab-Israeli War. UNRWA was established in 1949 specifically to provide relief and services to Palestinian refugees.</p>
+      </li>
+
+      <li data-date="1967">
+        <span class="name">Israeli Military Occupation Begins</span>
+        <div class="data show"></div>
+        <h3>1967 — Israeli Military Occupation Begins</h3>
+        <p>Following the Six-Day War, Israel occupied the West Bank and Gaza Strip — a military occupation that international law recognizes as ongoing to the present day.</p>
+      </li>
+
+      <li data-date="1993">
+        <span class="name">Oslo Accords</span>
+        <div class="data show"></div>
+        <h3>1993 — Oslo Accords</h3>
+        <p>Israel and the PLO signed the Oslo Accords, establishing the Palestinian Authority and a framework for a two-state solution. A final status agreement has never been reached, and Israeli settlement construction in the West Bank has continued throughout.</p>
+      </li>
+
+      <li data-date="2007">
+        <span class="name">Gaza Blockade Imposed</span>
+        <div class="data show"></div>
+        <h3>2007 — Gaza Blockade Imposed</h3>
+        <p>Following Hamas's military takeover of Gaza, Israel and Egypt imposed a comprehensive land, sea, and air blockade, severely restricting access to goods and people for over 15 years.</p>
+      </li>
+
+      <li data-date="2023">
+        <span class="name">Israeli Military Campaign</span>
+        <div class="data show"></div>
+        <h3>October 7, 2023 — Israeli Military Campaign</h3>
+        <p>Israel launched a comprehensive military campaign on Gaza, beginning one of the most destructive military operations in the region's modern history.</p>
+      </li>
+
+      <li data-date="January 19, 2025">
+        <span class="name">Ceasefire Agreement</span>
+        <div class="data show"></div>
+        <h3>January 19, 2025 — Ceasefire Agreement</h3>
+        <p>A ceasefire came into effect, briefly allowing some aid movement and a partial hostage-prisoner exchange. Humanitarian organizations began documenting the full scale of destruction.</p>
+      </li>
+
+      <li data-date="March 2, 2025">
+        <span class="name">UNRWA Aid Blockade</span>
+        <div class="data show"></div>
+        <h3>March 2, 2025 — UNRWA Aid Blockade</h3>
+        <p>UNRWA formally barred from bringing humanitarian aid into Gaza. Warehouses holding food for 1.1 million people and flour for 2.1 million people remain blocked from entry.</p>
+      </li>
+
+      <li data-date="March 18, 2025">
+        <span class="name"></span>
+        <div class="data show"></div>
+        <h3>March 18, 2025 — Ceasefire Collapses</h3>
+        <p>Full-scale hostilities resume across Gaza. Casualty figures and displacement continue to rise.</p>
+      </li>
+    </ol>
+  </section>
+
+
+  <section id="funding" class="container">
+    <h2>Aid Response and Funding</h2>
+    <p>
+      The 2025 OCHA-coordinated Humanitarian Response Plan for the occupied Palestinian territory
+      requests over <strong>$3 billion</strong> in funding. As of mid-2025, approximately 40% of
+      the requested amount has been received, leaving a significant gap. UNRWA requires approximately
+      $1.2 billion annually to operate and has also faced severe funding shortfalls following the
+      withholding of contributions by several donor governments.
+    </p>
+    <dl>
+      <dt>Total Requested (2025 HRP)</dt>
+      <dd>$3.0 billion+</dd>
+
+      <dt>Estimated Received</dt>
+      <dd>~$1.2 billion (~40%)</dd>
+
+      <dt>Estimated Funding Gap</dt>
+      <dd>~$1.8 billion</dd>
+
+      <dt>People Targeted</dt>
+      <dd>~2.1 million</dd>
+
+      <dt>Key Operational Agencies</dt>
+      <dd>UNRWA, OCHA, WHO, UNICEF, WFP, ICRC, MSF, Oxfam, Save the Children</dd>
+    </dl>
+  </section>
+
+
+  <section id="sources" class="container">
+    <h2>Sources and Further Reading</h2>
+    <ul>
+      <li><a href="https://www.unrwa.org" target="_blank">UNRWA — Situation Reports (2024–2025)</a></li>
+      <li><a href="https://www.unocha.org/occupied-palestinian-territory" target="_blank">OCHA — Occupied Palestinian Territory</a></li>
+      <li><a href="https://www.who.int/emergencies/situations/occupied-Palestinian-territory" target="_blank">WHO Health Cluster — oPt</a></li>
+      <li><a href="https://reliefweb.int/country/pse" target="_blank">ReliefWeb — Palestine Reports</a></li>
+      <li><a href="https://www.unicef.org/mena/press-releases" target="_blank">UNICEF MENA — Press Releases</a></li>
+      <li><a href="https://www.wfp.org/countries/palestine" target="_blank">WFP — Palestine</a></li>
+    </ul>
+  </section>
+
 
   <footer>
     <p>&copy; 2025 Levant Crisis Monitor | Hala Issa</p>
-    <p><a href="index.html">Home</a> | <a href="#top">Back to Top</a></p>
+    <p><a href="index.html" >Home</a> | <a href="#top">Back to Top</a> | <a href="contact.html">Contact Us</a></p>
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>
-  <script src="assets/js/index.js"></script>
 
 </main>
 </body>

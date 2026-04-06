@@ -39,6 +39,7 @@
    padding: 15px;
    border-radius: 15px ;
    background-color:var(--secondary-color);
+   border: solid 2px var(--detail-color-1);
   }
 
   /*---------------------------------------------------Banner + Nav + Logo--------------------------------------------------------*/
@@ -66,6 +67,7 @@
     width: 100%;
     padding:0 1.5rem;
     background-color: var(--secondary-color);
+    border-bottom: solid 1px var(--detail-color-1);
     opacity: 0.8;
 
    } 
@@ -125,7 +127,7 @@ li a{
 /* -----------------------------------------Slideshow CSS------------------------------------------------------------ */
 .slideshow img{
     width:100%;
-    height: 500px;      
+    height: 550px;      
     object-fit: cover;   /* fills the space without stretching the picture */
     display: block;
 }
@@ -140,18 +142,13 @@ li a{
 /* Customize Previous/Next/Dots/Autoplay */
 
 .slick-autoplay-toggle-button,
-.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
-  color: var(--detail-color-3);
+  color: white;
 }
 
 /* Customize Previous/Next/Dots/Autoplay - Active State */
 
-.slick-next:focus .slick-next-icon,
-.slick-next:focus .slick-prev-icon,
-.slick-prev:focus .slick-next-icon,
-.slick-prev:focus .slick-prev-icon,
 .slick-dots li button:focus .slick-dot-icon:before,
 .slick-dots li.slick-active button:focus .slick-dot-icon,
 .slick-autoplay-toggle-button:focus 
@@ -160,11 +157,104 @@ li a{
 }
 /* -----------------------------------------Slideshow CSS------------------------------------------------------------ */
 
+
+ #secondary{
+    padding:1px;
+  }
+
+  #secondary ul{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5px 5px 5px;
+    margin: 0;
+    
+    
+   }
+
+/* JS Timeline */
+   /* .timeline-wrapper{
+    max-width: 100vw;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   }
+
+
+  .timeline li{
+    position: relative;
+    width: 20rem;
+
+  }
+
+  .timeline li::before,
+  .timeline li::after,
+  .timeline li .name,
+  .data{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%) scale(var(--scale));
+    transition: 0.5 ease;
+  }
+
+  .timeline li::before{
+    content: "";
+    top: 1rem;
+    display: inline-block;
+    width: 0.12rem;
+    height: 1rem;
+  }
+
+  .timeline li::after{
+    content:attr(data-date);
+    top: -3.4rem;
+  }
+
+  .timeline li .name{
+    top: 2.4rem;
+    font: 600 1.1rem;
+    opacity: 0;
+  }
+
+  .timeline li:hover .name{
+    opacity:1;
+  }
+
+
+  .date{
+    width: 1.3rem;
+    height:1.3rem;
+    overflow: hidden;
+    border-radius: 50%;
+
+  }
+
+  .timeline li:hover .data{
+    background-color: var(--detail-color-3);
+    --scale:1.2;
+  }
+
+  .data .show{
+    width: 22rem;
+    height: 22rem;
+    border-radius: 1rem;
+    padding: 1rem;
+  } */
+  
+  .timeline{
+    list-style-type: none;
+  }
+/* JS Timeline */
+
 footer {
   color:var(--secondary-color);
   text-align: center;
   font-size: 0.8rem;
 }
+
+
 
 
 /* Media Query */ 
