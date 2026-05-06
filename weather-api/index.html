@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+ 
+  <h1>Location Temperature</h1>
+ 
+  <div class="input-row">
+    <label for="locationInput">Enter Location:</label>
+    <input type="text" id="locationInput" value="Buffalo River State Park">
+  </div>
+ 
+  <div class="button-row">
+    <button onclick="displayTemp()">DisplayTemp</button>
+    <button onclick="clearAll()">Clear</button>
+  </div>
+ 
+  <div id="errorMsg" class="error"></div>
+  <div id="locationInfo"></div>
+  <div id="forecastContainer"></div>
+ 
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

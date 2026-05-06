@@ -1,0 +1,63 @@
+body {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+ 
+h1 {
+  font-weight: bold;
+}
+ 
+h2 {
+  margin-top: 30px;
+}
+ 
+.input-row {
+  margin-bottom: 10px;
+}
+ 
+.input-row label {
+  margin-right: 8px;
+}
+ 
+.input-row input[type="text"] {
+  width: 300px;
+  padding: 4px;
+}
+ 
+.button-row {
+  margin-bottom: 10px;
+}
+ 
+.button-row button {
+  margin-right: 8px;
+  padding: 5px 10px;
+}
+ 
+.error {
+  color: red;
+  margin-top: 10px;
+}
+ 
+#locationInfo {
+  margin-top: 20px;
+}
+ 
+#locationInfo table,
+#forecastContainer table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+ 
+#locationInfo table td,
+#locationInfo table th,
+#forecastContainer table td,
+#forecastContainer table th {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  text-align: left;
+}
+ 
+#forecastContainer table th {
+  background-color: #f0f0f0;
+}
